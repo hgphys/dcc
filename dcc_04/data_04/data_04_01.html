@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>商品リストの例</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Hiragino Kaku Gothic Pro", "Yu Gothic", "Meiryo", sans-serif; padding: 24px; background:#f7f7f7; }
+    .container { max-width: 800px; margin: 0 auto; background:#fff; padding:20px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    h1 { font-size:1.3rem; margin-bottom:16px; }
+    .product-list { display: grid; gap:12px; }
+    .product-item { padding:12px; border:1px solid #e0e0e0; border-radius:6px; display:flex; justify-content:space-between; align-items:center; background:#fafafa; }
+    .product-info { display:flex; flex-direction:column; }
+    .product-name { margin:0 0 4px 0; font-size:1.05rem; }
+    .price { font-weight:700; }
+    .note { font-size:0.9rem; color:#666; margin-top:12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>商品一覧（サンプル）</h1>
+
+    <!-- 商品リスト（この構造をスクレイピング） -->
+    <div class="product-list">
+      <div class="product-item" data-id="1001">
+        <div class="product-info">
+          <h2 class="product-name">高機能マウス</h2>
+          <small class="product-meta">在庫あり · メーカー: TechCo</small>
+        </div>
+        <span class="price">5,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1002">
+        <div class="product-info">
+          <h2 class="product-name">静音キーボード</h2>
+          <small class="product-meta">入荷待ち · メーカー: QuietKey</small>
+        </div>
+        <span class="price">8,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1003">
+        <div class="product-info">
+          <h2 class="product-name">ワイヤレスヘッドフォン</h2>
+          <small class="product-meta">在庫あり · メーカー: SoundWave</small>
+        </div>
+        <span class="price">12,500円</span>
+      </div>
+
+      <div class="product-item" data-id="1004">
+        <div class="product-info">
+          <h2 class="product-name">27インチ4Kモニター</h2>
+          <small class="product-meta">在庫あり · メーカー: ViewPerfect</small>
+        </div>
+        <span class="price">45,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1005">
+        <div class="product-info">
+          <h2 class="product-name">USB-Cハブ</h2>
+          <small class="product-meta">在庫あり · メーカー: ConnectAll</small>
+        </div>
+        <span class="price">3,500円</span>
+      </div>
+
+      <div class="product-item" data-id="1006">
+        <div class="product-info">
+          <h2 class="product-name">Webカメラ（マイク内蔵）</h2>
+          <small class="product-meta">在庫わずか · メーカー: ClearView</small>
+        </div>
+        <span class="price">6,800円</span>
+      </div>
+
+      <div class="product-item" data-id="1007">
+        <div class="product-info">
+          <h2 class="product-name">電動昇降デスク</h2>
+          <small class="product-meta">取り寄せ · メーカー: FlexiDesk</small>
+        </div>
+        <span class="price">55,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1008">
+        <div class="product-info">
+          <h2 class="product-name">ノートPCスタンド</h2>
+          <small class="product-meta">在庫あり · メーカー: ErgoLift</small>
+        </div>
+        <span class="price">2,800円</span>
+      </div>
+
+      <div class="product-item" data-id="1009">
+        <div class="product-info">
+          <h2 class="product-name">Bluetoothスピーカー</h2>
+          <small class="product-meta">在庫あり · メーカー: SoundWave</small>
+        </div>
+        <span class="price">7,200円</span>
+      </div>
+
+      <div class="product-item" data-id="1010">
+        <div class="product-info">
+          <h2 class="product-name">外付けSSD 1TB</h2>
+          <small class="product-meta">在庫あり · メーカー: SpeedStor</small>
+        </div>
+        <span class="price">15,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1011">
+        <div class="product-info">
+          <h2 class="product-name">プリンター（複合機）</h2>
+          <small class="product-meta">在庫わずか · メーカー: PrintMaster</small>
+        </div>
+        <span class="price">22,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1012">
+        <div class="product-info">
+          <h2 class="product-name">メカニカルキーボード</h2>
+          <small class="product-meta">在庫あり · メーカー: ClickyKeys</small>
+        </div>
+        <span class="price">11,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1013">
+        <div class="product-info">
+          <h2 class="product-name">ゲーミングチェア</h2>
+          <small class="product-meta">取り寄せ · メーカー: GameThrone</small>
+        </div>
+        <span class="price">32,000円</span>
+      </div>
+
+      <div class="product-item" data-id="1014">
+        <div class="product-info">
+          <h2 class="product-name">モニターアーム</h2>
+          <small class="product-meta">在庫あり · メーカー: VesaMount</small>
+        </div>
+        <span class="price">4,500円</span>
+      </div>
+
+      <div class="product-item" data-id="1015">
+        <div class="product-info">
+          <h2 class="product-name">大容量モバイルバッテリー</h2>
+          <small class="product-meta">在庫あり · メーカー: PowerUp</small>
+        </div>
+        <span class="price">6,000円</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+

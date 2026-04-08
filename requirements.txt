@@ -1,0 +1,14 @@
+numpy<2.0
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+plotly
+requests
+beautifulsoup4
+janome
+openpyxl
+tqdm
+ipywidgets
+jupyterlab
